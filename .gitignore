@@ -6,3 +6,5 @@ build/
 .swiftpm/
 Pods/
 __pycache__/
+Brickwise.xcodeproj/
+Info.plist
