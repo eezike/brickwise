@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-cabin",
+  "title": "Demo cabin",
+  "units": {
+    "note": "x and z are studs from the baseplate front-left corner (x right, z away from the builder). y is plate heights above the baseplate top (a brick is 3 plates). x, z are the minimum corner of the piece footprint after rotation.",
+    "studMeters": 0.008,
+    "plateMeters": 0.0032
+  },
+  "baseplate": { "studsX": 8, "studsZ": 8, "color": "green" },
+  "marker": {
+    "imageName": "brickwise-marker",
+    "physicalWidthMeters": 0.06,
+    "baseplateCornerFromMarkerCenterStuds": { "x": -4, "z": 5 }
+  },
+  "colors": {
+    "green": "#2F7A4B",
+    "red": "#E5483B",
+    "white": "#F2F4F7",
+    "dark_gray": "#5F6672"
+  },
+  "parts": {
+    "brick_2x4": { "label": "Brick 2×4", "kind": "brick", "studsX": 4, "studsZ": 2, "heightPlates": 3 },
+    "brick_2x2": { "label": "Brick 2×2", "kind": "brick", "studsX": 2, "studsZ": 2, "heightPlates": 3 },
+    "plate_2x4": { "label": "Plate 2×4", "kind": "plate", "studsX": 4, "studsZ": 2, "heightPlates": 1 }
+  },
+  "steps": [
+    {
+      "index": 1,
+      "title": "Set the baseplate",
+      "instruction": "Put the baseplate just behind the marker, with its front edge facing you.",
+      "placements": []
+    },
+    {
+      "index": 2,
+      "title": "Front wall, left",
+      "instruction": "Place the 2×4 red brick on the baseplate, one stud in from the left and two studs back.",
+      "placements": [
+        { "part": "brick_2x4", "color": "red", "x": 1, "z": 2, "y": 0, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Front wall, right",
+      "instruction": "Add the 2×2 red brick right next to it, to finish the front row.",
+      "placements": [
+        { "part": "brick_2x2", "color": "red", "x": 5, "z": 2, "y": 0, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Back wall, left",
+      "instruction": "Place the 2×2 red brick directly behind the left end of the front row.",
+      "placements": [
+        { "part": "brick_2x2", "color": "red", "x": 1, "z": 4, "y": 0, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Back wall, right",
+      "instruction": "Finish the back row with the 2×4 red brick. It should overlap the seam in the front row.",
+      "placements": [
+        { "part": "brick_2x4", "color": "red", "x": 3, "z": 4, "y": 0, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Second layer, front left",
+      "instruction": "Start the white layer with a 2×2 brick on the front left corner.",
+      "placements": [
+        { "part": "brick_2x2", "color": "white", "x": 1, "z": 2, "y": 3, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 7,
+      "title": "Second layer, front right",
+      "instruction": "Add the 2×4 white brick next to it, covering the seam below.",
+      "placements": [
+        { "part": "brick_2x4", "color": "white", "x": 3, "z": 2, "y": 3, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Second layer, back left",
+      "instruction": "Place the 2×4 white brick on the back row, starting at the left edge.",
+      "placements": [
+        { "part": "brick_2x4", "color": "white", "x": 1, "z": 4, "y": 3, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Second layer, back right",
+      "instruction": "Close the back row with the last 2×2 white brick.",
+      "placements": [
+        { "part": "brick_2x2", "color": "white", "x": 5, "z": 4, "y": 3, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Add the roof",
+      "instruction": "Lay three 2×4 gray plates across the top, turned sideways, left to right.",
+      "placements": [
+        { "part": "plate_2x4", "color": "dark_gray", "x": 1, "z": 2, "y": 6, "rotation": 90 },
+        { "part": "plate_2x4", "color": "dark_gray", "x": 3, "z": 2, "y": 6, "rotation": 90 },
+        { "part": "plate_2x4", "color": "dark_gray", "x": 5, "z": 2, "y": 6, "rotation": 90 }
+      ]
+    },
+    {
+      "index": 11,
+      "title": "Add the chimney",
+      "instruction": "Place the 2×2 red brick on the front right corner of the roof.",
+      "placements": [
+        { "part": "brick_2x2", "color": "red", "x": 5, "z": 2, "y": 7, "rotation": 0 }
+      ]
+    },
+    {
+      "index": 12,
+      "title": "All done",
+      "instruction": "Your cabin is finished. Walk around it to see every side.",
+      "placements": []
+    }
+  ]
+}
